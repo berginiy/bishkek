@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение цвета сайта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Начальный цвет фона */
+            transition: background-color 0.5s ease; /* Анимация смены цвета */
+        }
+
+        .color-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Нажмите кнопку, чтобы изменить цвет сайта</h1>
+
+<button class="color-button" onclick="changeColor('#3498db')">Синий</button>
+<button class="color-button" onclick="changeColor('#e74c3c')">Красный</button>
+<button class="color-button" onclick="changeColor('#2ecc71')">Зеленый</button>
+
+<script>
+    function changeColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+
+</body>
+</html>
